@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=PT+Sans:wght@400;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+a,
+p,
+img,
+div,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Primary_Background_color: #ffffff;
+
+  --Primary_Text_color: #000000;
+  --HK: "Hanken Grotesk", sans-serif;
+  --PT: "PT Sans", sans-serif;
+  --button_color: #b070ff;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url("../image/dipper.png");
+}
+
+.container {
+  max-width: 1280px;
+}
+
+/* =============================================
+            Navbar CSS start
+=============================================== */
+.navbar {
+  background-color: var(--Primary_Background_color);
+}
+
+.navbar__iteam {
+  color: var(--white_color);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navButton {
+  color: #7c14fd;
+  margin-right: 10px;
+  padding: 10px 35px;
+
+  border: 2px solid var(--Primary, #7c14fd);
+  -webkit-border-radius: 250px;
+  -moz-border-radius: 250px;
+  -ms-border-radius: 250px;
+  -o-border-radius: 250px;
+}
+
+/* =============================================
+            Banner  part CSS start
+=============================================== */
+
+/* =============================================
+            Banner part CSS End
+=============================================== */
+#bannerPart {
+  padding: 170px 0 260px;
+  background: url(../Images/banner_wave.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannerPart__title {
+  color: var(--Black, #000);
+  font-family: var(--PT);
+  font-size: 76px;
+  font-weight: 700;
+  line-height: 115.7%;
+  letter-spacing: -1.14px;
+  margin-bottom: 30px;
+}
+
+/* =============================================
+            Blog part CSS start
+=============================================== */
+#Blog_part {
+  padding: 128px 0;
+}
+
+.blogTitle {
+  margin-left: 100px;
+  color: var(--Black, #000);
+  font-size: 30px;
+  font-weight: 700;
+}
+.blogHeading {
+  color: #b070ff;
+  margin-left: 100px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.blogCard {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* =============================================
+            Blog part CSS End
+=============================================== */
+
+/* =============================================
+            Card part CSS start
+=============================================== */
+.cardIteam {
+  padding: 108px 20px 41px;
+  background-color: #faf6ff;
+  border: 2px solid var(--white_color);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  margin-bottom: 66px;
+  box-shadow: 0px 86px 114px 0px rgba(124, 20, 253, 0.14);
+}
+
+.cardIteam__title {
+  color: var(--Primary_Text_color);
+  font-family: var(--PT);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 37.6px;
+}
+
+.cardItem__summary {
+  color: var(--Primary_Text_color);
+  font-family: var(--HK);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin: 26px 0 58px;
+}
+
+.cardItem__button {
+  padding: 13px 24px 13px;
+  background-color: var(--button_color);
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  color: var(--white_color);
+  font-family: var(--HK);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.cardItem__buttonIcon {
+  padding-left: 20px;
+}
+
+.cardItem__pagePrevious {
+  color: var(--Primary_Text_color);
+  font-family: var(--PT);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cardItem__pageNumber {
+  color: var(--Primary_Text_color);
+  font-family: var(--PT);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cardItem__pageNumber {
+  color: var(--black_color);
+  font-family: var(--PT);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* =============================================
+            Card part CSS End
+=============================================== */
+
+/* =============================================
+              Strategy CSS start
+=============================================== */
+#strategyPart {
+  padding: 0 0 100px;
+}
+
+.strategyPartRow {
+  column-gap: 97px;
+}
+
+.strategyPartLeft__title {
+  color: var(--Primary_Text_color);
+  text-align: center;
+  font-family: var(--PT);
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 137.2%;
+}
+
+.strategyPartLeft__summary {
+  color: #32046b;
+  text-align: justify;
+  font-family: var(--HK);
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 42.5px;
+  letter-spacing: 0.2px;
+  margin: 18px 0 80px;
+}
+
+.strategyPartLeft__button {
+  padding: 33px 36px;
+  background-color: #7c14fd;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  box-shadow: 0px 26px 46px 0px rgba(124, 20, 253, 0.35);
+
+  color: var(--white_color, #fff);
+  font-family: var(--HK);
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 145px;
+}
+
+/* =============================================
+              Strategy CSS End
+=============================================== */
+
+/* =============================================
+            Footer part CSS start
+=============================================== */
+#footerPart {
+  background: url(../Images/footer_image.png);
+  padding: 450px 0 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footerItem1__details {
+  max-width: 175px;
+  color: var(--white_color, #fff);
+  font-family: var(--HK);
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+  margin-top: 40px;
+}
+
+.footerItem1__contact {
+  color: var(--white_color, #fff);
+  font-family: var(--HK);
+  font-size: 18px;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+}
+
+.footer_social {
+  margin-top: 47px;
+}
+
+.footer__socialIcon1 {
+  color: var(--white_color, #fff);
+  font-size: 20px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.footer__socialIcon {
+  color: var(--white_color, #fff);
+  font-size: 20px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+
+.footer__socialIcon1:hover {
+  color: #7c14fd;
+}
+
+.footer__socialIcon:hover {
+  color: #7c14fd;
+}
+
+.footer__socialIcon {
+  padding-left: 22px;
+}
+
+.footerItem2 {
+  margin-left: 30px;
+}
+
+.footerItem2__title {
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+
+.footerItem2__child {
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+}
+
+.footerItem3__title {
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+  margin-bottom: 40px;
+}
+
+.footerItem3__child {
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+}
+
+.footerItem4__title {
+  color: var(--white_color, #fff);
+  font-family: var(--Hanken);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 31.5px;
+  letter-spacing: 0.2px;
+}
+
+.footerItem4Box {
+  max-width: 291px;
+  height: 200px;
+  border-radius: 20px;
+  background: #9a48ff;
+  box-shadow: 0px 69px 114px 0px rgba(124, 20, 253, 0.08);
+  margin-top: 15px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+/* =============================================
+            Footer part CSS End
+=============================================== */
